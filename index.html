@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="profile-picture-box">
+          <img src="./assets/images/Daeen_img.jpg" alt="Daeen Kabir" width="160">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="myname">Daeen Kabir</h1>
+          <p class="title">Machine Learning Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:daeenkabirdk03@gmail.com" class="contact-link">daeenkabirdk03@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>KAIST, Daejeon, South Korea</address>
+            </div>
+          </li>
+
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/daeen-kabir-605689235/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/Daeen" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.instagram.com/_dkabir_03/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <a href="https://drive.google.com/file/d/1H4GaFBWvJ7GqQXyhVt3K-imB1BHTKOrX/view" button class="navbar-link" download="Your_Resume_Name.pdf" target="_blank">CV</a>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm an AI enthusiast and a future ML engineer. My main fascination lies in multi-modal AI models and generative models like gpt-4 and diffusion. I'm highly motivated in developing efficient AI-based applications and conducting research on the cutting-edge AI models.
+          </p>
+
+          <p>
+            Currently, I'm working on diverse project ideas ranging from NLP to 3D machine learning. I'm also working on automated audio description model for movies to aid visually impaired individuals. My role involves building ML pipelines for benchmarking latest automated audio-description models on 'MADv-2' dataset.
+          </p>
+        </section>
+        
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        
+          <section class="timeline">
+        
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+        
+              <h3 class="h3">Education</h3>
+            </div>
+        
+            <ol class="timeline-list">
+        
+              <li class="timeline-item">
+        
+                <h4 class="h4 timeline-item-title">Korea Advanced Institute of Science and Technology (KAIST)</h4>
+        
+                <span>Aug, 2020 — Feb, 2025</span>
+        
+                <p class="timeline-text">
+                  Degree: Bachelor of Science (7th semester)
+                  <p class="timeline-text">Major in Computer Science</p>
+                  <p class="timeline-text">Minor in Electrical Engineering</p>
+                </p>
+        
+              </li>
+        
+              <li class="timeline-item">
+        
+                <h4 class="h4 timeline-item-title">S.F.X. Greenherald International School</h4>
+        
+                <span>2017 — 2020</span>
+        
+                <p class="timeline-text">
+                  High School
+                </p>
+        
+              </li>
+        
+            </ol>
+        
+          </section>
+        
+          <section class="timeline">
+        
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+        
+              <h3 class="h3">Experience</h3>
+            </div>
+        
+            <ol class="timeline-list">
+        
+              <li class="timeline-item">
+        
+                <h4 class="h4 timeline-item-title">AI researcher</h4>
+        
+                <span>Oct 2023 — Present</span>
+        
+                <p class="timeline-text">
+                  Individual study intern at INA Lab, KAIST. Working on automated audio description model for movies to aid visually impaired individuals.
+                </p>
+        
+              </li>
+        
+              <li class="timeline-item">
+        
+                <h4 class="h4 timeline-item-title">KAIST International Student Association (KISA)</h4>
+        
+                <span>Sept 2022 — Aug 2023</span>
+        
+                <p class="timeline-text">
+                  Member of the KISA Web Division, where I was responsible for maintaining the official website of KISA.
+                  Also volunteered in various events organized by KISA.
+                </p>
+        
+              </li>
+        
+            </ol>
+        
+          </section>
+        
+          <section class="skill">
+        
+            <h3 class="h3 skills-title">Skills</h3>
+        
+            <ul class="skills-list content-card">
+        
+              <li class="skills-item">
+        
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                </div>
+        
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+        
+              </li>
+        
+              <li class="skills-item">
+        
+                <div class="title-wrapper">
+                  <h5 class="h5">PyTorch</h5>
+                </div>
+        
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+        
+              </li>
+        
+              <li class="skills-item">
+        
+                <div class="title-wrapper">
+                  <h5 class="h5">NumPy, Pandas, Matplotlib, Seaborn</h5>
+                </div>
+        
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+        
+              </li>
+        
+              <li class="skills-item">
+        
+                <div class="title-wrapper">
+                  <h5 class="h5">Tensorflow</h5>
+                </div>
+        
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%;"></div>
+                </div>
+        
+              </li>
+
+              <li class="skills-item">
+              
+                <div class="title-wrapper">
+                  <h5 class="h5">Apache Spark</h5>
+                </div>
+              
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%;"></div>
+                </div>
+              
+              </li>
+
+              <li class="skills-item">
+              
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL</h5>
+                </div>
+              
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+              
+              </li>
+        
+            </ul>
+        
+          </section>
+        
+        </article>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+
+
+
+
+      <!--
+        - #Projects
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title"></h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+            </ul>
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://github.com/Daeen/CS479_team06" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/gaussian.png" alt="3D gaussian" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <!-- <p class="blog-category">Design</p> -->
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">September, 2023 - Present</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Enhancing 3D Gaussian Splatting via Augmentation, Regularization, and Reflective Rendering</h3>
+
+                  <p class="blog-text">
+                    Tackle rare views and reflections in the baseline technique via augmenting training with model-generated
+                    images and implementing neural point catacaustics for accurate reflection rendering via a trained neural warp field.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/Daeen/dkd_ce" target="_blank">
+            
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/dkdce.jpg" alt="3D gaussian" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <!-- <p class="blog-category">Design</p> -->
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2022-02-23">April, 2023 - June, 2023</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">Decoupled Knowledge Distillation with Cross-Entropy</h3>
+            
+                  <p class="blog-text">
+                    Decoupled knowledge distillation with focus on analyzing decoupled loss factors through cross-entropy.
+                    Developed two loss functions to evaluate our method's effectiveness, achieving notable performance improvements over  various feature-based and logit-based distillation techniques.
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/Daeen/Intermediate_training_via_clustering" target="_blank">
+            
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/clustertune.png" alt="3D gaussian" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <!-- <p class="blog-category">Design</p> -->
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2022-02-23">Oct, 2023 - Present</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">Intermediate Training of Language Models Using Clustering</h3>
+            
+                  <p class="blog-text">
+                    Improvement of fine-tuning performance of large language models via intermediate training. Our tean proposed three  methods of improving intermediate training via clustering: alternative clustering algorithm without fixed cluster numbers, embedding approach, and entropy minimization. Currently working on implementing the proposed methods and evaluating their effectiveness.
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/s6007541/Progressive-Self-Knowledge-Distillation-with-Mutual-Learning" target="_blank">
+            
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/overview.png" alt="3D gaussian" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <!-- <p class="blog-category">Design</p> -->
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2022-02-23">March, 2023 - June, 2023</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">Progressive Self-Knowledge Distillation with Mutual Learning</h3>
+            
+                  <p class="blog-text">
+                    We focused on developing self-knowledge distillation (self-KD) techniques for image classification by applying principles of online collaborative learning. This involved emulating real-world individual and group learning methods within deep neural networks to enhance predictive accuracy and minimize training costs. Through extensive examination, we validated the effectiveness of a self-sustaining, teacher-independent, evolving neural network.
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
