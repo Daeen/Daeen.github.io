@@ -2,553 +2,285 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daeen Kabir</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daeen Kabir</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-  <main>
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="profile-picture-box">
-          <img src="./assets/images/Daeen_img.jpg" alt="Daeen Kabir" width="160">
-        </figure>
-        <div class="info-content">
-          <h1 class="name" title="myname">Daeen Kabir</h1>
-          <p class="title">Machine Learning Engineer</p>
+<body class="light-mode">
+    <!-- Navbar: Horizontal fixed bar at the top -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-bar-content">
+            <!-- Hamburger icon (left side) -->
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- Dark/Light Mode Toggle (right side) -->
+            <button class="mode-toggle" id="modeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:daeenkabirdk03@gmail.com" class="contact-link">daeenkabirdk03@gmail.com</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>KAIST, Daejeon, South Korea</address>
-            </div>
-          </li>
-
+        <!-- Dropdown Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/daeen-kabir-605689235/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://github.com/Daeen" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.instagram.com/_dkabir_03/" class="social-link" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
+    </nav>
 
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <a href="daeencv.pdf" class="navbar-link" target="_blank">CV</a>
-
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Project</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am a 4th-year undergraduate CS student at KAIST. I was a AI engineer at a startup where I work on computer vision in medical AI. My interest lies in self-supervised learning and unsupervised segmentation. Previously, I also worked as an individual study intern at INA Lab, KAIST.
-          </p>
+    <div class="container">
+        <!-- Combined Home and About Section -->
+        <section id="home">
+            <div class="box home-about-combined full-box">
+                <div class="home-left">
+                    <div class="circle">
+                        <img src="assets/images/Daeen_img.jpg" alt="My Picture" />
+                    </div>
+                    <h1>Daeen Kabir</h1>
+                    <div class="social-icons">
+                        <a href="https://x.com/DkViT_2001" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daeen-kabir-605689235/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Daeen" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:daeenkabirdk03@gmail.com">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-right">
+                    <!-- Anchor for About -->
+                    <div id="about"></div>
+                    <h2>About Me</h2>
+                    <p>
+                        🎓 KAIST Undergraduate<br>
+                        I’m a 5th-year student at Korea Advanced Institute of Science & Technology (KAIST), majoring in
+                        Computer Science with a minor in Electrical Engineering and AI.
+                        <br><br>
+                        💼 Professional Experience<br>
+                        Formerly an AI Engineer at MolpaxBio, I focused on medical AI imaging. My research spans 3D
+                        computer vision, medical imaging, and low-resource NLP. Currently, I’m working on 3D
+                        segmentation for dynamic scenes.
+                        <br><br>
+                        🤖 Passion & Collaboration<br>
+                        I’m passionate about using AI to solve real-world challenges and am always open to impactful
+                        collaboration opportunities.
+                        <br><br>
+                        🏃‍♂️ Beyond Academics<br>
+                        In my free time, I like to study quantitative finance 💹, go running 🏃‍♂️, and enjoy climbing
+                        🧗‍♂️.
+                        <br><br>
+                        Feel free to reach out for inquiries or collaboration proposals!
+                    </p>
+                    <div class="buttons" style="text-align: center;">
+                        <a class="button" href="https://drive.google.com/file/d/1HDrsZCQnxLVUHP0fXeGBTIE1WrnShiYV/view?usp=sharing" target="_blank">
+                            <i class="fas fa-file-alt"></i> Resume
+                        </a>
+                        <a class="button" href="#contact">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-        
-          <section class="timeline">
-        
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-        
-              <h3 class="h3">Education</h3>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="box full-box">
+                <img src="assets/images/KAIST_logo_small.svg.png" alt="KAIST Logo" />
+                <div>
+                    <h3>KAIST, Korea Advanced Institute of Science and Technology</h3>
+                    <p>Aug 2020 - Jun 2025 (Expected Date of Graduation)</p>
+                    <p>
+                        B.S. School of Computing (Major)<br>
+                        School of Electrical Engineering (Minor)<br>
+                        Semi-minor in Artificial Intelligence
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="box full-box">
+                <img src="assets/images/molpax.png" alt="MolpaxBio Logo" />
+                <div class="experience-details">
+                    <h3><a href="https://www.molpax.com/" target="_blank">AI Engineer Intern, MolpaxBio</a></h3>
+                    <span class="duration">Dec 2023 - June 2024</span>
+                    <ul>
+                        <li>
+                            Developed robust models using hospital data for:
+                            <ul>
+                                <li>Cancer prognosis and staging classification from whole-slide images.</li>
+                                <li>Detection and identification of liver cellular structures.</li>
+                                <li>Generation of realistic lung tissue whole-slide images.</li>
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            Implemented advanced deep learning methodologies:
+                            <ul>
+                                <li>Multi-instance learning, self-supervised learning, and feature-bagging for classification.</li>
+                                <li>YOLO-based models for precise liver structure detection.</li>
+                                <li>Generative Adversarial Networks (GANs) for synthesizing lung tissue slide images.</li>
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            Delivered high-performance outcomes:
+                            <ul>
+                                <li>Classification accuracy and AUC consistently above <strong>90%</strong> or even <strong>95%</strong> across multiple datasets.</li>
+                                <li>Mean Intersection over Union (mIoU) of <strong>0.78</strong> for liver structure detection.</li>
+                                <li>Fréchet Inception Distance (FID) score of <strong>12.97</strong> for generated lung tissue images,
+                                    indicating high realism.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="box full-box">
+                <img src="assets/images/sgvr.png" alt="SGVR Logo" />
+                <div class="experience-details">
+                    <h3><a href="https://sgvr.kaist.ac.kr/" target="_blank">Undergraduate Researcher, SGVR Lab</a></h3>
+                    <span class="duration">July 2024 - Present</span>
+                    <ul>
+                        <li>
+                            Currently leading a project on 3D segmentation of dynamic scenes with diverse motions.
+                        </li>
+                        <li>
+                            Conducted research on pose-free sparse-view and dynamic scene reconstruction, using techniques
+                            like DUSt3R, MAST3R, and InstantSplat.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box full-box">
+                <img src="assets/images/ui.png" alt="UI Logo" />
+                <div class="experience-details">
+                    <h3><a href="https://uilab.kr/" target="_blank">Undergraduate Researcher, Users & Information Lab</a></h3>
+                    <span class="duration">Sept 2024 - Feb 2025</span>
+                    <ul>
+                        <li>
+                            Developed a benchmark dataset for Bengali linguistics, history, and culture, evaluated top LLMs
+                            on it, and led a research paper (under review).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box full-box">
+                <img src="" alt="MMAI Lab" />
+                <div class="experience-details">
+                    <h3><a href="https://mm.kaist.ac.kr/" target="_blank">Individual Study Researcher, Multimodal AI Lab</a></h3>
+                    <span class="duration">July 2024 - Aug 2024</span>
+                    <ul>
+                        <li>
+                            Worked on text-to-audio generation using latent diffusion models.
+                        </li>
+                        <li>
+                            Reproduced results from the AudioLDM paper.
+                        </li>
+                    </ul>
+                </div>
             </div>
         
-            <ol class="timeline-list">
-        
-              <li class="timeline-item">
-        
-                <h4 class="h4 timeline-item-title">Korea Advanced Institute of Science and Technology (KAIST)</h4>
-        
-                <span>Aug, 2020 — Feb, 2025</span>
-        
-                <p class="timeline-text">
-                  Degree: Bachelor of Science (8th semester)
-                  <p class="timeline-text">Major in Computer Science</p>
-                  <p class="timeline-text">Minor in Electrical Engineering</p>
-                </p>
-        
-              </li>
-            </ol>
-        
-          </section>
-        
-          <section class="timeline">
-        
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-        
-              <h3 class="h3">Experience</h3>
-            </div>
-        
-            <ol class="timeline-list">
-              <li class="timeline-item">
-              
-                <h4 class="h4 timeline-item-title">AI Engineer (MolpaxBio)</h4>
-              
-                <span>Dec 2023 — Mar 2024</span>
-              
-                <p class="timeline-text">
-                  I contributed to the development of a deep-learning pipeline for three different classification tasks related to cancer detection and prognosis. I also developed a annotation-scaled fast-patching mechanism, and leveraged pretrained Yolov8 model for tall cell variant segmentation. Additionally, I contributed to research on non-alcoholic fatty liver disease (NASH) through patching, meticulous annotation of nuclei, Kupffer cells and steatosis, and using Yolov8 to detect the three structures.
-                </p>
-              
-              </li>
-        
-              <li class="timeline-item">
-        
-                <h4 class="h4 timeline-item-title">Individual Study Intern (INA Lab)</h4>
-        
-                <span>Oct 2023 — Dec 2023</span>
-        
-                <p class="timeline-text">
-                  At INA Lab, I worked on automated audio description generation for movies. I developed the pre-processing and post-processing pipeline of the paper "AutoAD: Movie Description in Context", in conjunction with the model provided in the paper code to dynamically create audio descriptions.
-                </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="assets\images\gaussian.png" alt="Project 1" />
+                    <div class="project-overlay">
+                        <a href="https://github.com/yourusername/project1" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://drive.google.com/file/d/1XeD4M5dbwy-pMpAGwF5Bt74W3_YDTWfF/view?usp=sharing" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Project PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assets\images\clustertune.png" alt="Project 2" />
+                    <div class="project-overlay">
+                        <a href="https://github.com/Daeen/Intermediate_training_via_clustering" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://drive.google.com/file/d/1WXY-d5R0iquoBr16wNuQEEML55Z_pWaa/view?usp=sharing" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Project PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assets\images\overview.png" alt="Project 2" />
+                    <div class="project-overlay">
+                        <a href="https://github.com/s6007541/PSKD-ML" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://github.com/s6007541/PSKD-ML/blob/main/pdf_files/PSKD_ML.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Project PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assets\images\zep.png" alt="Project 2" />
+                    <div class="project-overlay">
+                        <a href="https://github.com/Daeen/JunctionAsia2022_ZEP" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://zep.us/play/8lPgbo" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Project Demo
+                        </a>
+                    </div>
+                </div>
                 
-              </li>
-        
-              <li class="timeline-item">
-        
-                <h4 class="h4 timeline-item-title">KAIST International Student Association (KISA)</h4>
-        
-                <span>Sept 2022 — Aug 2023</span>
-        
-                <p class="timeline-text">
-                  Member of the KISA Web Division, where I was responsible for maintaining the official website of KISA.
-                  Also volunteered in various events organized by KISA.
-                </p>
-        
-              </li>
-        
-            </ol>
-        
-          </section>
-        
-          <section class="skill">
-        
-            <h3 class="h3 skills-title">Skills</h3>
-        
-            <ul class="skills-list content-card">
-        
-              <li class="skills-item">
-        
-                <div class="title-wrapper">
-                  <h5 class="h5">Python</h5>
-                </div>
-        
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-        
-              </li>
-        
-              <li class="skills-item">
-        
-                <div class="title-wrapper">
-                  <h5 class="h5">PyTorch</h5>
-                </div>
-        
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-        
-              </li>
-        
-              <li class="skills-item">
-        
-                <div class="title-wrapper">
-                  <h5 class="h5">NumPy, Pandas, Matplotlib, Seaborn</h5>
-                </div>
-        
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%;"></div>
-                </div>
-        
-              </li>
-        
-              <li class="skills-item">
-        
-                <div class="title-wrapper">
-                  <h5 class="h5">Tensorflow</h5>
-                </div>
-        
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 40%;"></div>
-                </div>
-        
-              </li>
-
-              <li class="skills-item">
-              
-                <div class="title-wrapper">
-                  <h5 class="h5">Apache Spark</h5>
-                </div>
-              
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 40%;"></div>
-                </div>
-              
-              </li>
-
-              <li class="skills-item">
-              
-                <div class="title-wrapper">
-                  <h5 class="h5">SQL</h5>
-                </div>
-              
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 50%;"></div>
-                </div>
-              
-              </li>
-        
-            </ul>
-        
-          </section>
-        
-        </article>
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
+        </section>
 
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
+        <!-- Awards Section -->
+        <section id="awards">
+            <h2>Awards</h2>
+            <div class="award-box full-box">
+                <h3>National Scholarship Tier 1</h3>
+                <p>Fall 2020 - Fall 2024</p>
                 <p>
+                    Tuition fee and full amount of school support fees supported by Korea Government
                 </p>
-              </div>
-
             </div>
-
-          </section>
-
-        </div>
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-
-
-
-
-      <!--
-        - #Projects
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title"></h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select Category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-            </ul>
-          </div>
-
         </section>
 
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="project">
-
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="https://github.com/Daeen/CS479_team06" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/gaussian.png" alt="3D gaussian" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <!-- <p class="blog-category">Design</p> -->
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">September, 2023 - December, 2023</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">DINO-Matching 3D Gaussian Splatting</h3>
-
-                  <p class="blog-text">
-                    Reconstructing small objects and reducing blotchy artifacts. By emphasizing on scene reconstruction and viewpoint consistency in DINO-feature space, our method achieves enhanced rendering quality, especially for small objects in realistic scenes.
-.<br /><p style="color:#fbff00" ;>Contribution: Responsible for the ablation studies, baseline comparisons, paper and poster diagrams.</p>
-                    
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://github.com/Daeen/dkd_ce" target="_blank">
-            
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/dkdce.jpg" alt="3D gaussian" loading="lazy">
-                </figure>
-            
-                <div class="blog-content">
-            
-                  <div class="blog-meta">
-                    <!-- <p class="blog-category">Design</p> -->
-            
-                    <span class="dot"></span>
-            
-                    <time datetime="2022-02-23">April, 2023 - June, 2023</time>
-                  </div>
-            
-                  <h3 class="h3 blog-item-title">Decoupled Knowledge Distillation with Cross-Entropy</h3>
-            
-                  <p class="blog-text">
-                    Decoupled knowledge distillation with focus on analyzing decoupled loss factors through cross-entropy.
-                    Developed two loss functions to evaluate our method's effectiveness, achieving notable performance improvements over various feature-based and logit-based distillation techniques.<br /><p style="color:#fbff00" ;>Contribution: Generated the project idea and wrote all the code for the proposed loss functions and data collection. Wrote the introduction and methods of the poster.</p>
-                  </p>
-            
-                </div>
-            
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://github.com/Daeen/Intermediate_training_via_clustering" target="_blank">
-            
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/clustertune.png" alt="3D gaussian" loading="lazy">
-                </figure>
-            
-                <div class="blog-content">
-            
-                  <div class="blog-meta">
-                    <!-- <p class="blog-category">Design</p> -->
-            
-                    <span class="dot"></span>
-            
-                    <time datetime="2022-02-23">Oct, 2023 - Dec, 2023</time>
-                  </div>
-            
-                  <h3 class="h3 blog-item-title">OECT: Optimized-Embedded Cluster & Tune: Boost Cold Start Performance in Text Classification</h3>
-            
-                  <p class="blog-text">
-                    Our team utilized pretrained model to get feature embeddings, and K-means clustering on the embeddings to get pseudo-labels to guide classification task. We improved the fine-tuning performance of large language models by 2.6% on non-topical and by 4% on topical datasets while maintain similar time efficiency.<br /><p style="color:#fbff00" ;>Contribution: Worked on the embedding approach and generating soft-labels as output.</p>
-                    
-                  </p>
-            
-                </div>
-            
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://github.com/s6007541/Progressive-Self-Knowledge-Distillation-with-Mutual-Learning" target="_blank">
-            
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/overview.png" alt="3D gaussian" loading="lazy">
-                </figure>
-            
-                <div class="blog-content">
-            
-                  <div class="blog-meta">
-                    <!-- <p class="blog-category">Design</p> -->
-            
-                    <span class="dot"></span>
-            
-                    <time datetime="2022-02-23">March, 2023 - June, 2023</time>
-                  </div>
-            
-                  <h3 class="h3 blog-item-title">Progressive Self-Knowledge Distillation with Mutual Learning</h3>
-            
-                  <p class="blog-text">
-                    We focused on developing self-knowledge distillation (self-KD) techniques for image classification by applying principles of online collaborative learning. This involved emulating real-world individual and group learning methods within deep neural networks to enhance predictive accuracy and minimize training costs. Through extensive examination, we validated the effectiveness of a self-sustaining, teacher-independent, evolving neural network.
-                    <br/><p style="color:#fbff00" ;>Contribution: Worked on the implementation of the baseline papers related to the project, wrote the code for data collection, diagrams, and wrote the introduction and related work sections of the paper.</p>
-                  </p>
-            
-                </div>
-            
-              </a>
-            </li>
-
-          </ul>
-
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-box full-box">
+                <p class="contact-email">
+                    <i class="fas fa-envelope"></i>
+                    <strong>daeenkabirdk03@gmail.com</strong>
+                </p>
+                <p class="contact-email">
+                    <i class="fas fa-envelope"></i>
+                    <strong>dk2001@kaist.ac.kr</strong>
+                </p>
+                <p>Feel free to reach out for collaboration projects or any inquiries.</p>
+            </div>
         </section>
-
-      </article>
-
-
-
-
-
-
     </div>
 
-  </main>
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
