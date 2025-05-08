@@ -65,16 +65,16 @@
                     <h2>About Me</h2>
                     <p>
                         🎓 KAIST Undergraduate<br>
-                        I’m a 5th-year student at Korea Advanced Institute of Science & Technology (KAIST), majoring in
+                        I'm a 5th-year student at Korea Advanced Institute of Science & Technology (KAIST), majoring in
                         Computer Science with a minor in Electrical Engineering and AI.
                         <br><br>
                         💼 Professional Experience<br>
                         Formerly an AI Engineer at MolpaxBio, I focused on medical AI imaging. My research spans 3D
-                        computer vision, medical imaging, and low-resource NLP. Currently, I’m working on 3D
+                        computer vision, medical imaging, and low-resource NLP. Currently, I'm working on 3D
                         segmentation for dynamic scenes.
                         <br><br>
                         🤖 Passion & Collaboration<br>
-                        I’m passionate about using AI to solve real-world challenges in 3D and language and am always open to impactful
+                        I'm passionate about using AI to solve real-world challenges in 3D and language and am always open to impactful
                         collaboration opportunities.
                         <br><br>
                         🏃‍♂️ Beyond Academics<br>
@@ -219,50 +219,116 @@
             <h2>Projects</h2>
             <div class="project-grid">
                 <div class="project-item">
-                    <img src="assets\images\gaussian.png" alt="Project 1" />
-                    <div class="project-overlay">
-                        <a href="https://github.com/yourusername/project1" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://drive.google.com/file/d/1XeD4M5dbwy-pMpAGwF5Bt74W3_YDTWfF/view?usp=sharing" target="_blank">
-                            <i class="fas fa-file-pdf"></i> Project PDF
-                        </a>
+                    <img src="assets\images\gaussian.png" alt="Gaussian Splatting Project" />
+                    <div class="project-content">
+                        <h3>DINO-Matching 3D Gaussian Splatting</h3>
+                        <div class="project-description">
+                            <ul>
+                                <li>Send supervisory signals through matching the rendered and GT images in DINO feature space</li>
+                                <li>Improvement of small object rendering and reduced artifacts</li>
+                                <li>Reduce blotchy artifacts during novel-view phase (from unseen camera viewpoints)</li>
+                            </ul>
+                        </div>
+                        <div class="project-keywords">
+                            <span>Computer Graphics</span>
+                            <span>3D Rendering</span>
+                            <span>Gaussian Splatting</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Daeen/CS479_team06" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://drive.google.com/file/d/1XeD4M5dbwy-pMpAGwF5Bt74W3_YDTWfF/view?usp=sharing" target="_blank">
+                                <i class="fas fa-file-pdf"></i> Project PDF
+                            </a>
+                        </div>
                     </div>
                 </div>
+
                 <div class="project-item">
-                    <img src="assets\images\clustertune.png" alt="Project 2" />
-                    <div class="project-overlay">
-                        <a href="https://github.com/Daeen/Intermediate_training_via_clustering" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://drive.google.com/file/d/1WXY-d5R0iquoBr16wNuQEEML55Z_pWaa/view?usp=sharing" target="_blank">
-                            <i class="fas fa-file-pdf"></i> Project PDF
-                        </a>
+                    <img src="assets\images\clustertune.png" alt="Cluster Tune Project" />
+                    <div class="project-content">
+                        <h3>OECT: Optimized-Embedded Cluster & Tune</h3>
+                        <div class="project-description">
+                            <ul>
+                                <li>Mitigate cold-start problem in NLP, a scenario with limited labeled data</li>
+                                <li>Improve fine-tuning performance through unsupervised intermediate training phase modification</li>
+                                <li>Used feature embedding-clustering to get soft pseudo-labels for supervision</li>
+                                <li>Achieved 2.6% and 4% increases in accuracy on topical and non-topical datasets</li>
+                            </ul>
+                        </div>
+                        <div class="project-keywords">
+                            <span>LLM</span>
+                            <span>Text Classification</span>
+                            <span>Transfer Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Daeen/Intermediate_training_via_clustering" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://drive.google.com/file/d/1WXY-d5R0iquoBr16wNuQEEML55Z_pWaa/view?usp=sharing" target="_blank">
+                                <i class="fas fa-file-pdf"></i> Project PDF
+                            </a>
+                        </div>
                     </div>
                 </div>
+
                 <div class="project-item">
-                    <img src="assets\images\overview.png" alt="Project 2" />
-                    <div class="project-overlay">
-                        <a href="https://github.com/s6007541/PSKD-ML" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://github.com/s6007541/PSKD-ML/blob/main/pdf_files/PSKD_ML.pdf" target="_blank">
-                            <i class="fas fa-file-pdf"></i> Project PDF
-                        </a>
+                    <img src="assets\images\overview.png" alt="PSKD-ML Project" />
+                    <div class="project-content">
+                        <h3>PSKD-ML: Progressive Self-Knowledge Distillation with Mutual Learning</h3>
+                        <div class="project-description">
+                            <ul>
+                                <li>Developed innovative knowledge distillation method combining PS-KD with Deep Mutual Feature Learning</li>
+                                <li>Implemented novel collaborative training pipeline within single-network architectures</li>
+                                <li>Achieved state-of-the-art accuracy on CIFAR-100, reducing Top-1 error rates by up to 4.44% for ResNet-50</li>
+                                <li>Optimized computational efficiency through dynamic feature-level knowledge transfer</li>
+                            </ul>
+                        </div>
+                        <div class="project-keywords">
+                            <span>Knowledge Distillation</span>
+                            <span>Model Compression</span>
+                            <span>Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/s6007541/PSKD-ML" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://drive.google.com/file/d/1o0Rx271g2R8rcyxfzYki55IzYZimUtZU/view?usp=sharing" target="_blank">
+                                <i class="fas fa-file-pdf"></i> Project PDF
+                            </a>
+                        </div>
                     </div>
                 </div>
+
                 <div class="project-item">
-                    <img src="assets\images\zep.png" alt="Project 2" />
-                    <div class="project-overlay">
-                        <a href="https://github.com/Daeen/JunctionAsia2022_ZEP" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://zep.us/play/8lPgbo" target="_blank">
-                            <i class="fas fa-file-pdf"></i> Project Demo
-                        </a>
+                    <img src="assets\images\zep.png" alt="ZEPAdemics Project" />
+                    <div class="project-content">
+                        <h3>ZEPAdemics: Interactive Metaverse Education Platform</h3>
+                        <div class="project-description">
+                            <ul>
+                                <li>Earned 4th place (honorable mention) out of over 100 participating teams in Naver ZEP track</li>
+                                <li>Developed an interactive metaverse platform integrating online education with virtual classrooms</li>
+                                <li>Implemented real-time attendance system, lecture video streaming, and interactive office hours</li>
+                                <li>Created virtual spaces for lectures, seminars, and group study sessions with screen sharing capabilities</li>
+                                <li>Designed scalable architecture supporting multiple universities and educational platforms</li>
+                            </ul>
+                        </div>
+                        <div class="project-keywords">
+                            <span>Metaverse</span>
+                            <span>Web Development</span>
+                            <span>ZEPScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Daeen/JunctionAsia2022_ZEP" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://youtu.be/7cLWABBuz-Y" target="_blank">
+                                <i class="fas fa-video"></i> Demo Video
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </section>
 
