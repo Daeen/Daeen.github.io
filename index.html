@@ -5,6 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daeen Kabir</title>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            // Enhanced measurement for better tracking
+            send_page_view: true,
+            allow_google_signals: true,
+            allow_ad_personalization_signals: false
+        });
+    </script>
+    
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/mystyle.css">
@@ -13,26 +28,31 @@
 <body class="light-mode">
     <!-- Navbar: Horizontal fixed bar at the top -->
     <nav class="navbar" id="navbar">
-        <div class="nav-bar-content">
-            <!-- Hamburger icon (left side) -->
+        <div class="navbar-content">
+            <!-- Hamburger icon (for mobile) -->
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#papers">Papers</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
             <!-- Dark/Light Mode Toggle (right side) -->
             <button class="mode-toggle" id="modeToggle">
                 <i class="fas fa-moon"></i>
             </button>
         </div>
-        <!-- Dropdown Navigation Links -->
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
     </nav>
 
     <div class="container">
@@ -81,7 +101,7 @@
                         I am open to impactful any collaboration opportunities, so feel free to reach out for any collaboration projects or inquiries.
                     </p>
                     <div class="buttons" style="text-align: center;">
-                        <a class="button" href="https://drive.google.com/file/d/1gzj9EdWS00jO7GURMEHrrZ5W-6ZS9oXX/view?usp=sharing" target="_blank">
+                        <a class="button" href="https://drive.google.com/file/d/1p5Q8z5DtM1tVbpX2pqCr4Imirt5FCzbk/view?usp=sharing" target="_blank">
                             <i class="fas fa-file-alt"></i> Resume
                         </a>
                         <a class="button" href="#contact">
@@ -90,6 +110,29 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news">
+            <h2>News</h2>
+            <ul class="news-list">
+                <li>
+                    <strong>March 2025:</strong>
+                    Joined the Advanced Machine Intelligence (AMI) Lab at KAIST as an undergraduate researcher.
+                </li>
+                <li>
+                    <strong>September 2024:</strong>
+                    Joined an LLM research project in Users & Information Lab at KAIST, under professor Alice Oh.
+                </li>
+                <li>
+                    <strong>July 2024:</strong>
+                    Started the Undergraduate Research Participation (URP) at SGVR Lab and individual study research at Multimodal AI Lab at KAIST.
+                </li>
+                <li>
+                    <strong>December 2023:</strong>
+                    Began my role as an AI Engineer Intern at MolpaxBio.
+                </li>
+            </ul>
         </section>
 
         <!-- Education Section -->
@@ -159,7 +202,10 @@
                             Working on optimization-free 3D mesh texturing leveraging correspondence markers.
                         </li>
                         <li>
-                            Reproducing a diffusion-based novel-view synthesis pipeline that utilizes epipolar attention without any model training or fine-tuning.
+                            Reproduced results for Zero-123 pose-conditioned diffusion model with additional implementation of DDIM inversion for forward noising process, improving the PSNR, LPIPs, SSIM of novel-view synthesis.
+                        </li>
+                        <li>
+                            Reproduced a diffusion-based novel-view synthesis pipeline that utilizes multi-view epipolar attention without any model training or fine-tuning.
                         </li>
                     </ul>
                 </div>
@@ -171,14 +217,15 @@
                     <span class="duration">July 2024 - Jun 2025</span>
                     <ul>
                         <li>
-                            Worked on 3D segmentation of dynamic scenes, and conducted research on 3D Gaussian Splatting, pose-free scene reconstruction, and novel-view synthesis.
+                            Led research on 3D segmentation in dynamic scenes using Gaussian Splatting, novel-view synthesis, and pose-free reconstruction.
                         </li>
                         <li>
-                            Developed a 4D Gaussian Splatting segmentation approach leveraging motion cues and incorporating low-dimension PCA-reduced DINO
-                            features for interactive 3D click-based segmentation (Github link: https://github.com/Daeen/Som-Feature).
+                            Developed a 4D Gaussian-based interactive segmentation method leveraging motion cues and low-dimensional DINO features for click-based 3D segmentation 
+                            (<a href="https://github.com/Daeen/Som-Feature" target="_blank">GitHub</a>).
+                        </li>
                         <li>
-                            Extended the existing work "SADG: Segment Any Dynamic Gaussian Without Object Trackers" utilizing Segment Anything Model (SAM) masks for semantically-aware contrastive
-                            learning-based segmentation by reproducing the the training implementation (Github link: https://github.com/Daeen/Seg4DGaussian).
+                            Reproduced the training code implementation for "SADG: Segment Any Dynamic Gaussian Without Object Trackers" that utilizes Segment Anything Model (SAM) masks for semantically-aware contrastive learning-based segmentation of dynamic Gaussians 
+                            (<a href="https://github.com/Daeen/Seg4DGaussian" target="_blank">GitHub</a>).
                         </li>
                     </ul>
                 </div>
@@ -197,7 +244,7 @@
                 </div>
             </div>
             <div class="box full-box">
-                <img src="" alt="MMAI Lab" />
+                <img src="assets/images/mmai.png" alt="MMAI Lab" />
                 <div class="experience-details">
                     <h3><a href="https://mm.kaist.ac.kr/" target="_blank">Individual Study Researcher, Multimodal AI Lab</a></h3>
                     <span class="duration">July 2024 - Aug 2024</span>
@@ -335,12 +382,34 @@
         <!-- Awards Section -->
         <section id="awards">
             <h2>Awards</h2>
+            <div class="award-box full-box" style="margin-bottom: 30px;">
+                <h3>Undergraduate Research Participation (URP) Program</h3>
+                <p>Fall 2024</p>
+                <p>
+                    Among selected recipients to receive KRW 3,000,000 funding to engage in research activities under Professor Sung-Eui Yoon from School of Computing(SGVR Lab).
+                </p>
+            </div>
             <div class="award-box full-box">
                 <h3>National Scholarship Tier 1</h3>
                 <p>Fall 2020 - Fall 2024</p>
                 <p>
                     Tuition fee and full amount of school support fees supported by Korea Government
                 </p>
+            </div>
+        </section>
+
+        <!-- Papers/Preprints Section -->
+        <section id="papers">
+            <h2>Papers & Preprints</h2>
+            <div class="award-box full-box">
+                <h3>BLUCK: A Benchmark Dataset for Bengali Linguistic Understanding and Cultural Knowledge</h3>
+                <p><strong>Daeen Kabir</strong>, Minhajur Rahman Chowdhury Mahim, Sheikh Shafayat, Adnan Sadik, Arian Ahmed, Eunsu Kim, Alice Oh</p>
+                
+                <div class="project-links" style="margin-top: 15px; justify-content: center;">
+                    <a href="https://arxiv.org/abs/2505.21092" target="_blank">
+                        <i class="fas fa-file-pdf"></i> arXiv
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -362,6 +431,7 @@
     </div>
 
     <script src="assets/js/javscript.js"></script>
+    <script src="assets/js/analytics.js"></script>
 </body>
 
 </html>
