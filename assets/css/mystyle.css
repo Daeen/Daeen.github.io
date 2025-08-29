@@ -59,7 +59,7 @@ body {
 }
 
 /* Navbar content */
-.nav-bar-content {
+.navbar-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -664,6 +664,87 @@ h2::after {
 
   .profile-image-container {
     margin-bottom: 10px;
+  }
+}
+
+/* News Section - Vertical Timeline like the image */
+.news-timeline {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+.news-timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ddd;
+}
+
+.dark-mode .news-timeline::before {
+  background-color: #555;
+}
+
+.news-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.news-item::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background-color: #333;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.dark-mode .news-item::before {
+  background-color: #fff;
+}
+
+.news-date {
+  color: #007bff;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-right: 8px;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.news-description {
+  color: var(--text-color);
+  line-height: 1.5;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .news-timeline {
+    max-width: 90%;
+  }
+  
+  .news-item {
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 30px;
+  }
+  
+  .news-date {
+    white-space: normal;
   }
 }
 
