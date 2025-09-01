@@ -891,6 +891,33 @@ h2::after {
   font-size: 1.4rem;
 }
 
+.tool-icon-svg {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.tool-icon-svg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tool-icon-svg.cuda {
+  background: linear-gradient(135deg, #76B900, #00A86B);
+  padding: 4px;
+}
+
+.tool-icon-svg.cuda img {
+  border-radius: 4px;
+}
+
 /* Brand-specific colors for tools */
 .tool-icon.numpy {
   background: linear-gradient(135deg, #013243, #4CAF50);
@@ -931,6 +958,11 @@ h2::after {
 
 .tool-icon.spark {
   background: linear-gradient(135deg, #E25A1C, #FF5722);
+  font-size: 1.3rem;
+}
+
+.tool-icon.cuda {
+  background: linear-gradient(135deg, #76B900, #00A86B);
   font-size: 1.3rem;
 }
 
